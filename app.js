@@ -44,3 +44,9 @@ console.log(baseUrl);
 
 
 })
+
+$('.changeName').on('click', function(event) {
+
+
+}
+});
