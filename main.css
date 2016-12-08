@@ -13,9 +13,38 @@
 }
 
 * {
-	padding: 4%;
+	font-family: 'Roboto', sans-serif; 
+	padding: 1%;
 }
 
 body {
 	background-color: rgba(200, 0, 0, 0.8);
+}
+
+.menu, .dropdown-content, .js-dropdown-button {
+	height: 150px;
+}
+
+form {
+	margin-top: 100px;
+	padding: 3%;
+}
+
+.js-quote-generator, .js-dropdown-button {
+	width: 45%;
+	margin-right: 250px;
+}
+
+.js-quote-generator {
+	margin-top: 250px;
+}
+
+.dropdown-content {
+	height: 250px;
+}
+
+a {
+	margin-top: 50px;
+	font-size: 40px;
+
 }
