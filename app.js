@@ -45,8 +45,12 @@ console.log(baseUrl);
 
 })
 
-$('.changeName').on('click', function(event) {
+$('.nameChange').on('submit', function(event) {
+ baseUrl = 'http://api.icndb.com/jokes/random';
+var firstName  = $('.fn').val();
+var lastName = $('.ln').val();
+baseUrl+= `?firstName=${firstName}&lastName=${lastName}`;
+console.log(baseUrl);
+event.preventDefault();
 
-
-}
 });
