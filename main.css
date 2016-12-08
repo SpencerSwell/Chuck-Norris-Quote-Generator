@@ -1,0 +1,21 @@
+.dropdown-content {
+	display: none;
+}
+
+.js-dropdown-button:hover .dropdown-content {
+	display: block;
+
+}
+
+.menu:hover .dropdown-content {
+	display: block;
+
+}
+
+* {
+	padding: 4%;
+}
+
+body {
+	background-color: rgba(200, 0, 0, 0.8);
+}
