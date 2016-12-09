@@ -6,6 +6,24 @@
 	display: block;
 
 }
+.js-dropdown-button {
+
+	background-color:rgb(9,63,178);
+
+}
+
+h1{
+	font-size:3.0rem;
+}
+button {
+
+	font-size:1.1rem;
+}
+
+h1, button { font-family:'Fjalla One', sans-serif; }
+.menu{
+	margin-bottom:80px;
+}
 
 .menu:hover .dropdown-content {
 	display: block;
@@ -18,7 +36,9 @@
 }
 
 body {
-	background-color: rgba(200, 0, 0, 0.8);
+	background-color: rgb(255, 42, 0);
+	margin-left: 33%;
+	margin-right: 33%;
 }
 
 .menu, .dropdown-content, .js-dropdown-button {
@@ -26,7 +46,7 @@ body {
 }
 
 form {
-	margin-top: 100px;
+	
 	padding: 3%;
 }
 
@@ -35,8 +55,17 @@ form {
 	margin-right: 250px;
 }
 
+.js-quote-box {
+
+	margin-top:10px;
+	width:300px;
+	height:200px;
+}
+
 .js-quote-generator {
-	margin-top: 250px;
+
+	height:50px;
+	background-color:rgb(169,255,5);
 }
 
 .dropdown-content {
@@ -44,7 +73,25 @@ form {
 }
 
 a {
-	margin-top: 50px;
-	font-size: 40px;
+
+	font-size: 20px;
 
 }
+
+a:hover{
+	color:blue;
+}
+
+q { 
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.8rem;
+	width:inherit;
+	height: inherit;
+	margin-bottom:25px;
+	 }
+
+	 p{ margin-top:50px; }
+
+	 .user-replace{
+	 	margin-top:55px;
+	 }
