@@ -20,6 +20,7 @@ function renderQuote (quote) {
 
 
 $('.js-quote-generator').on('click', function() {
+ console.log(baseUrl);
   getDataFromApi();
 })
 
@@ -72,6 +73,11 @@ $('.nameChange').on('submit', function(event) {
 
 
 $('.reset').on('click', function () {
+	console.log(fn);
+ baseUrl='http://api.icndb.com/jokes/random';
   fn = undefined;
   ln = undefined;
+  console.log(fn);
+  console.log(baseUrl);
+
 })

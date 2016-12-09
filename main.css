@@ -61,6 +61,8 @@ form {
 
 }
 
+p{ font-size:1.8rem; }
+
 .js-quote-generator {
 
 	height:50px;
@@ -71,9 +73,14 @@ form {
 	height: 300px;
 }
 
+button{
+
+	font-size:1.8rem;
+}
+
 a {
 
-	font-size: 20px;
+	font-size: 1.5rem;
 
 }
 
@@ -83,10 +90,11 @@ a:hover{
 
 q { 
 	font-family: 'Open Sans', sans-serif;
-	font-size:1.8rem;
+	font-size:2.5rem;
 	width:inherit;
 	height: inherit;
 	margin-bottom:25px;
+	color:white;
 	 }
 
 	 p{ margin-top:50px; }
@@ -94,3 +102,33 @@ q {
 	 .user-replace{
 	 	margin-top:55px;
 	 }
+
+	 .js-quote-generator, .js-dropdown-button {
+ 	height:200px;
+
+ }
+ .js-quote-generator {
+ 	margin-top:55px;
+ 	height:200px;
+
+ }
+
+	 @media only screen 
+  and (max-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+ body {
+ 	width:100%;
+ }	
+ .js-quote-generator, .js-dropdown-button {
+ 	height:200px;
+
+ }
+.js-quote-generator {
+margin-top:55px;
+
+}
+input{
+	height:35px;
+}
+}
