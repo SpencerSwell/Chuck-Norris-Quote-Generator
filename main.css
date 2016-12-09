@@ -8,7 +8,7 @@
 }
 .js-dropdown-button {
 
-	background-color:rgb(9,63,178);
+	background-color:rgb(40,153,80);
 
 }
 
@@ -36,7 +36,7 @@ h1, button { font-family:'Fjalla One', sans-serif; }
 }
 
 body {
-	background-color: rgb(255, 42, 0);
+	background-color: rgb(140, 23, 32);
 	margin-left: 33%;
 	margin-right: 33%;
 }
@@ -58,18 +58,17 @@ form {
 .js-quote-box {
 
 	margin-top:10px;
-	width:300px;
-	height:200px;
+
 }
 
 .js-quote-generator {
 
 	height:50px;
-	background-color:rgb(169,255,5);
+	background-color:rgb(25,150,216);
 }
 
 .dropdown-content {
-	height: 250px;
+	height: 300px;
 }
 
 a {
