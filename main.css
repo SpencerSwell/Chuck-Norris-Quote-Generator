@@ -10,12 +10,13 @@
 
 	background-color:rgb(40,153,80);
 	width: 400px;
-
+	margin-right:75px;
 }
 
 h1{
 	font-size:3.0rem;
 	text-align: center;
+	margin-right:75px;
 }
 button {
 
@@ -47,13 +48,13 @@ body {
 .menu, .dropdown-content, .js-dropdown-button {
 	height: 150px;
 }
-
+p{ border:solid black 3px; }
 form {
 	
 	padding: 3%;
 }
 
-.js-quote-generator, .js-dropdown-button {
+.js-quote-generator {
 	margin-right: 250px;
 }
 
@@ -86,7 +87,7 @@ button{
 }
 
 a {
-
+	
 	font-size: 1.5rem;
 
 }
@@ -109,6 +110,7 @@ q {
 	 .user-replace {
 	 	margin-top:55px;
 	 	text-align: center;
+	 	margin-right:78px;
 	 }
 
 	 .js-quote-generator, .js-dropdown-button {

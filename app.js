@@ -3,6 +3,7 @@ var baseUrl = 'http://api.icndb.com/jokes/random';
 var categoryURL = ''
 var fn;
 var ln;
+var audio = new Audio('bang.mp3');
 function getDataFromApi () {
   $.getJSON(baseUrl, function (quote) {
     renderQuote(quote);
@@ -21,6 +22,7 @@ function renderQuote (quote) {
 
 $('.js-quote-generator').on('click', function() {
  console.log(baseUrl);
+audio.play();
   getDataFromApi();
 })
 
