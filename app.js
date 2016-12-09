@@ -1,7 +1,8 @@
 'use strict';
 var baseUrl = 'http://api.icndb.com/jokes/random';
 var categoryURL = ''
-
+var fn;
+var ln;
 function getDataFromApi () {
 	$.getJSON(baseUrl, function (quote) {
 		renderQuote(quote);
@@ -26,7 +27,10 @@ $('.dropdown-content').on('click', '.Nerdy', function() {
 	baseUrl = "http://api.icndb.com/jokes/random";
 	baseUrl += '?limitTo=[nerdy]';
 	console.log(baseUrl);
-
+if(fn && ln) {
+		baseUrl +=`&firstName=${fn}&lastName=${ln}`;
+		console.log(baseUrl);
+	}
 
 })
 
@@ -34,13 +38,21 @@ $('.dropdown-content').on('click', '.Explicit', function() {
 	baseUrl = "http://api.icndb.com/jokes/random";
 	baseUrl+= '?limitTo=[explicit]';
 	console.log(baseUrl);
+		if(fn && ln) {
+			baseUrl +=`&firstName=${fn}&lastName=${ln}`;
+			console.log(baseUrl);
+		}
 
 
 })
 
 $('.dropdown-content').on('click', '.NerdyAndExplicit', function() {
-	baseUrl = 'http://api.icndb.com/jokes/random';
+	baseUrl = 'http://api.icndb.com/jokes/random?limitTo=[nerdy]&limitTo=[explicit]';
 	console.log(baseUrl);
+		if(fn && ln) {
+		baseUrl +=`&firstName=${fn}&lastName=${ln}`;
+		console.log(baseUrl);
+	}
 
 
 })
@@ -51,6 +63,9 @@ $('.nameChange').on('submit', function(event) {
 	var lastName = $('.ln').val();
 	baseUrl+= `?firstName=${firstName}&lastName=${lastName}`;
 	console.log(baseUrl);
+	 fn = firstName;
+	console.log(fn);
+	 ln = lastName;
 	event.preventDefault();
 
 });
