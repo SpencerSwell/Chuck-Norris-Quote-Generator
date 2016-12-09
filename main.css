@@ -9,11 +9,13 @@
 .js-dropdown-button {
 
 	background-color:rgb(40,153,80);
+	width: 400px;
 
 }
 
 h1{
 	font-size:3.0rem;
+	text-align: center;
 }
 button {
 
@@ -33,6 +35,7 @@ h1, button { font-family:'Fjalla One', sans-serif; }
 * {
 	font-family: 'Roboto', sans-serif; 
 	padding: 1%;
+	text-align: center;
 }
 
 body {
@@ -51,7 +54,6 @@ form {
 }
 
 .js-quote-generator, .js-dropdown-button {
-	width: 45%;
 	margin-right: 250px;
 }
 
@@ -61,12 +63,16 @@ form {
 
 }
 
-p{ font-size:1.8rem; }
+p { 
+	font-size:1.8rem;
+	text-align: center;
+}
 
 .js-quote-generator {
 
-	height:50px;
+	height:80px;
 	background-color:rgb(25,150,216);
+	width: 400px;
 }
 
 .dropdown-content {
@@ -76,6 +82,7 @@ p{ font-size:1.8rem; }
 button{
 
 	font-size:1.8rem;
+	margin-top: 8px;
 }
 
 a {
@@ -99,8 +106,9 @@ q {
 
 	 p{ margin-top:50px; }
 
-	 .user-replace{
+	 .user-replace {
 	 	margin-top:55px;
+	 	text-align: center;
 	 }
 
 	 .js-quote-generator, .js-dropdown-button {
@@ -108,7 +116,7 @@ q {
 
  }
  .js-quote-generator {
- 	margin-top:55px;
+ 	margin-top:80px;
  	height:200px;
 
  }
