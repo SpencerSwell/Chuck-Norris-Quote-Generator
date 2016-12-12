@@ -1,7 +1,7 @@
 'use strict';
 var baseUrl = 'http://api.icndb.com/jokes/random';
-const fn;
-const ln;
+var fn;
+var ln;
 const audio = new Audio('bang.mp3');
  const getDataFromApi =  () => {
   $.getJSON(baseUrl,  (quote) => {
