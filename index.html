@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Chuck Norris Quote Generator</title>
-	<link rel="stylesheet" href="main.css" type="text/css">
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:700i');
+    </style>
+    <title>Chuck Norris Quote Generator</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-	<h1>Chuck Norris Quote Generator</h1>
-	<button class="js-quote-generator">Click here for a quote</button>
-	<div class="js-quote-box"></div>
+  <h1>Chuck Norris Quote Generator</h1>
+  <div class="menu">
+    <button class="js-dropdown-button">Select a Quote Category</button>
+  <div class="dropdown-content">
+    <a  class="Nerdy">Nerdy</a><br>
+    <a class="Explicit">Explicit</a><br>
+  </div>
+  </div>
+  <button class="js-quote-generator">Click here for a quote</button>
+  <div class="js-quote-box"></div>
+  <div class= "user-replace"> 
+    <p> Enter Your name here and take the place of the great Chuck Norris! </p>
+    <form class="nameChange">
+      <input type="text" placeholder="Firstname" class="fn" required/>
+      <input type="text" placeholder="Lastname" class="ln" required/>
+      <button type="Submit" class="changeName">Change Name</button>
+    </form>
+  <button class="reset">Reset Name</button>
+  </div>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </body>
