@@ -1,5 +1,5 @@
 'use strict';
-var baseUrl = 'http://api.icndb.com/jokes/random';
+var baseUrl = 'https://api.icndb.com/jokes/random';
 var fn;
 var ln;
 const audio = new Audio('bang.mp3');
@@ -20,7 +20,7 @@ audio.play();
 })
 
 $('.dropdown-content').on('click', '.Nerdy', () => {
-  baseUrl = "http://api.icndb.com/jokes/random";
+  baseUrl = "https://api.icndb.com/jokes/random";
   baseUrl += '?limitTo=[nerdy]';
 if(fn && ln) {
     baseUrl +=`&firstName=${fn}&lastName=${ln}`;
@@ -29,7 +29,7 @@ if(fn && ln) {
 })
 
 $('.dropdown-content').on('click', '.Explicit', () => {
-  baseUrl = "http://api.icndb.com/jokes/random";
+  baseUrl = "https://api.icndb.com/jokes/random";
   baseUrl+= '?limitTo=[explicit]';
     if(fn && ln) {
       baseUrl +=`&firstName=${fn}&lastName=${ln}`;
@@ -39,7 +39,7 @@ $('.dropdown-content').on('click', '.Explicit', () => {
 })
 
 $('.dropdown-content').on('click', '.NerdyAndExplicit',() => {
-  baseUrl = 'http://api.icndb.com/jokes/random?limitTo=[nerdy]&limitTo=[explicit]';
+  baseUrl = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]&limitTo=[explicit]';
     if(fn && ln) {
     baseUrl +=`&firstName=${fn}&lastName=${ln}`;
   }
@@ -47,7 +47,7 @@ $('.dropdown-content').on('click', '.NerdyAndExplicit',() => {
 })
 
 $('.nameChange').on('submit', (event) => {
-  baseUrl = 'http://api.icndb.com/jokes/random';
+  baseUrl = 'https://api.icndb.com/jokes/random';
   let firstName  = $('.fn').val();
   let lastName = $('.ln').val();
   baseUrl+= `?firstName=${firstName}&lastName=${lastName}`;
@@ -58,7 +58,7 @@ $('.nameChange').on('submit', (event) => {
 
 
 $('.reset').on('click', () => {
- baseUrl='http://api.icndb.com/jokes/random';
+ baseUrl='https://api.icndb.com/jokes/random';
   fn = undefined;
   ln = undefined;
 })
