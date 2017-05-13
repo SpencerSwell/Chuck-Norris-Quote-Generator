@@ -46,6 +46,10 @@ $('.dropdown-content').on('click', '.NerdyAndExplicit',() => {
 
 })
 
+$('.js-dropdown-button').on('click', () => {
+  $('.dropdown-content').show();
+})
+
 $('.nameChange').on('submit', (event) => {
   baseUrl = 'https://api.icndb.com/jokes/random';
   let firstName  = $('.fn').val();

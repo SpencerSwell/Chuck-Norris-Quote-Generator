@@ -2,7 +2,7 @@
 	display: none;
 }
 
-.js-dropdown-button:hover .dropdown-content {
+.js-dropdown-button:click .dropdown-content {
 	display: block;
 
 }
@@ -13,9 +13,6 @@
 	margin-right:55px;
 }
 
-html{
-	max-width:80%;
-}
 input {
 
 	height:35px;
@@ -41,10 +38,11 @@ button {
 h1, button { font-family:'Fjalla One', sans-serif; text-align: center; }
 .menu{
 	margin-bottom:50px;
+	display:block;
 }
 
-.menu:hover .dropdown-content {
-	display: block;
+.dropdown-content {
+	display: none;
 
 }
 
